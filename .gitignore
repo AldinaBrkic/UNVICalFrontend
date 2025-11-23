@@ -9,3 +9,4 @@ CalendarBackend/obj/
 frontend/node_modules/
 frontend/.next/
 frontend/dist/
+.vercel
