@@ -1,3 +1,5 @@
+/* eslint-disable no-restricted-globals */
+
 // Minimal service worker za PWA
 self.addEventListener('install', event => {
   console.log('Service Worker: Installed');
