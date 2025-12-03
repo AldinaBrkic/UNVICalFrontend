@@ -6,7 +6,15 @@ CalendarBackend/bin/
 CalendarBackend/obj/
 
 # Node.js frontend
-frontend/node_modules/
-frontend/.next/
-frontend/dist/
-.vercel
+# Node.js frontend
+node_modules/
+build/
+dist/
+.cache/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+
