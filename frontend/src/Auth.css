@@ -1,0 +1,94 @@
+/* Wrapper da sve bude centrirano */
+.auth-wrapper {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Pozadina sa logom */
+.auth-background {
+  background-image: url("../public/logo/OIP.jpg"); /* obavezno u public folderu */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 261px;
+  background-color: rgba(255, 255, 255, 0.3); /* lagano prozirna bijela */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;  
+}
+
+/* Forma */
+.auth-form {
+  padding-bottom: 116px;
+  position: relative;
+  z-index: 1; /* forma ide iznad pozadine */
+  max-width: 400px;
+  margin: 50px auto 5px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.85); /* poluprozirna bijela */
+  border-radius: 8px;
+  text-align: center;
+}
+
+.auth-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.auth-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.auth-form button {
+  width: 50%;
+  display: block;
+  margin: 15px auto 0;
+  padding: 12px 24px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.auth-form button:hover {
+  background: #0056b3;
+}
+
+/* Toggle dugme ispod formi */
+.toggle-btn {
+  position: relative;
+  z-index: 1; /* da bude iznad pozadine */
+  display: block;
+  margin: 15px auto 0 auto;
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.toggle-btn:hover {
+  color: #0056b3;
+}
+
